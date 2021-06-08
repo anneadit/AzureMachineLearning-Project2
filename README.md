@@ -1,7 +1,7 @@
 
 # Operationalizing Machine Learning with Azure
 
-In this project we first configure an Auto ML experiment in Azure ML Studio on a bank marketing dataset with the aim of predicting if a certain individual will make a term deposit. After the experiment has been completed, we deploy the best performing model to an Azure Container Instance and then consume the endpoint with a JSON payload. Afterwards, we create a automated pipeline using Azure SDK to do develop the same AutoML model, publish it, and then consume it.
+In this project we first configure an Auto ML experiment in Azure ML Studio for a bank marketing dataset with the aim of predicting if a certain individual will make a term deposit. After the experiment has been completed, we deploy the best performing model to an Azure Container Instance and then consume the endpoint with a JSON payload. Afterwards, we create a automated pipeline using Azure SDK to develop the same AutoML model, publish it, and then consume it.
 
 ## Architectural Diagram
 
