@@ -6,36 +6,65 @@ In this project we first configure an Auto ML experiment in Azure ML Studio on a
 
 ## Architectural Diagram
 
-The project consists of the following steps:
+### The project consists of the following steps:
 
-Authentication: 
+### Authentication: 
 We need to authenticate our credentials and what we are allowed to do with Azure ML. This is automatically taken care of through the Udacity subscription.
 
-Automated ML Experiment:
+### Automated ML Experiment:
 We run a classification AutoML experiment on the Bank Marketing dataset and then retrieve the best performing model
 
-Deploy the best model
+### Deploy the best model
 We deploy the best performing model on an Azure Container Instance with authentication enabled.
 
-Enable logging
+### Enable logging
 We enable Application Insights for detailed logging and debugging purposes.
 
-Swagger Documentation
+### Swagger Documentation
 We create a Swagger UI to document our endpoint API in order to make it easier for users to understand the various http requests.
 
-Consume model endpoints
+### Consume model endpoints
 We consume the model endpoint with a JSON payload
 
-Create and publish a pipeline
+### Create and publish a pipeline
 We automate the aforementioned steps by creating and publishing an AutoML pipeline.
 
-Documentation
+### Documentation
 Everything is documented in a readme file.
 
+### Architecture Diagram
 ![image](https://user-images.githubusercontent.com/38438203/121116307-4f30c800-c7e4-11eb-92e3-8078b006f251.png)
 
 ## Key Steps
-*TODO*: Write a short discription of the key steps. Remeber to include all the screencasts required to demonstrate key steps. 
+
+### Automated ML Experiment
+
+  1. We use the registered bank marketing dataset
+  ![image](https://user-images.githubusercontent.com/38438203/121117947-fc0c4480-c7e6-11eb-8f75-12b5edde0203.png)
+  
+  2. Run the classification AutoML Experiment
+  ![image](https://user-images.githubusercontent.com/38438203/121118109-4988b180-c7e7-11eb-89ab-742c740db86d.png)
+
+  3. Retrieve the best performing model which is a Voting Ensemble model
+  ![image](https://user-images.githubusercontent.com/38438203/121118210-76d55f80-c7e7-11eb-89a6-e992cb8b07b8.png)
+  
+  ![image](https://user-images.githubusercontent.com/38438203/121118245-83f24e80-c7e7-11eb-9076-d0035c3a408f.png)
+  
+### Deploy the best performing model
+
+  1. We deploy the best performing model on an Azure Container Instance with authentication enabled
+  ![image](https://user-images.githubusercontent.com/38438203/121118620-2b6f8100-c7e8-11eb-8d9b-ff3012c8806f.png)
+
+### Enable Logging
+
+  1. We enable logging for the deployed model in Azure SDK using the logs.py script
+  ![image](https://user-images.githubusercontent.com/38438203/121118826-85704680-c7e8-11eb-81ef-0b716ca40902.png)
+
+
+
+  
+
+
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
