@@ -1,12 +1,38 @@
-*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
 
 
-# Your Project Title Here
+# Operationalizing Machine Learning with Azure
 
-*TODO:* Write an overview to your project.
+In this project we first configure an Auto ML experiment in Azure ML Studio on a bank marketing dataset with the aim of predicting if a certain individual will make a term deposit. After the experiment has been completed, we deploy the best performing model to an Azure Container Instance and then consume the endpoint with a json payload. Afterwards, we create a automated pipeline using Azure SDK to do develop the same AutoML model, publish it, and then consume it.
 
 ## Architectural Diagram
-*TODO*: Provide an architectual diagram of the project and give an introduction of each step.
+
+The project consists of the following steps:
+
+Authentication: 
+We need to authenticate our credentials and what we are allowed to do with Azure ML. This is automatically taken care of through the Udacity subscription.
+
+Automated ML Experiment:
+We run a classification AutoML experiment on the Bank Marketing dataset and then retrieve the best performing model
+
+Deploy the best model
+We deploy the best performing model on an Azure Container Instance with authentication enabled.
+
+Enable logging
+We enable Application Insights for detailed logging and debugging purposes.
+
+Swagger Documentation
+We create a Swagger UI to document our endpoint API in order to make it easier for users to understand the various http requests.
+
+Consume model endpoints
+We consume the model endpoint with a JSON payload
+
+Create and publish a pipeline
+We automate the aforementioned steps by creating and publishing an AutoML pipeline.
+
+Documentation
+Everything is documented in a readme file.
+
+![image](https://user-images.githubusercontent.com/38438203/121116307-4f30c800-c7e4-11eb-92e3-8078b006f251.png)
 
 ## Key Steps
 *TODO*: Write a short discription of the key steps. Remeber to include all the screencasts required to demonstrate key steps. 
