@@ -110,4 +110,6 @@ Everything is documented in a readme file.
 
 A screencast of the project maybe viewed at https://youtu.be/qUbXFuok81c
 
+## Future Work
 
+It would be interesting if we could enable deep learning and assess if we can obtain better performance. We can also attemt to build a traditional ML pipeline (non-AutoML) with hyperdrive for practice and compare the results with the AutoML model. We could also assess the fairness of the model by looking at certain metrics such as False Positive Rates and False Negative Rates since the model uses gender and age features.
